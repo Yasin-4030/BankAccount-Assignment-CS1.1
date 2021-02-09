@@ -4,7 +4,7 @@ class BankAccount:
     def __init__(self, full_name, balance = 0):
         self.full_name = full_name
         self.account_number = random.randint(10000000, 99999999)
-        self.routing_number = random.randint(10000000, 99999999)
+        self.routing_number = random.randint(100000000, 999999999)
         self.balance = balance
 
     def deposit(self, amount):
@@ -40,9 +40,9 @@ class BankAccount:
 	        print(f"{key}: {self.__dict__[key]}")
             
 user1 = BankAccount('Jay Lowe', 1800)
-# user1.deposit(100)
-# user1.withdraw(850) 
+# user1.deposit(150)
+# user1.withdraw(1820) 
 # user1.get_balance()
 # user1.add_interest()
-# user1.ATM_withdraw(200)
-# user1.print_reciept()
+# user1.ATM_withdraw(120)
+user1.print_reciept()
